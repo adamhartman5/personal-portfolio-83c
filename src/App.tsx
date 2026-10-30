@@ -26,10 +26,10 @@ export default function App() {
       <section>
         <div className="p-1 m-1 py-3">
           <h1 className="py-2 text-2xl">Adam Hartman</h1>
-          <p className="py-2 text-sm max-w-200">
+          <article className="py-2 text-sm max-w-200">
             I am a junior developer with knowledge in HTML, CSS, JavaScript and
-            React. I am focused on building full stack apps along with SPAs.
-          </p>
+            React. I am focused on building full stack apps along with SPAs. I have a passion for coding and learning new technologies. I'm a strong self starter and have self-taught myself my skills through different online platforms.
+          </article>
         </div>
         <div id="contact" className="p-1 m-1">
           <h2 className="py-3 text-xl">Contact Info</h2>
