@@ -14,7 +14,7 @@ export default function App() {
     },
   ]
   return (
-    <main className="min-h-screen p-2">
+    <main className="min-h-screen mx-auto w-full max-w-5xl px-4 py-6 sm:px-6 lg:px-8">
       <nav className="flex flex-row flex-wrap">
         <a href="#contact" className="m-2">
           Contact
@@ -26,7 +26,7 @@ export default function App() {
       <section>
         <div className="p-1 m-1 py-3">
           <h1 className="py-2 text-2xl">Adam Hartman</h1>
-          <article className="py-2 text-sm max-w-200">
+          <article className="py-2 text-sm max-w-prose min-w-0">
             I am a junior developer with knowledge in HTML, CSS, JavaScript and
             React. I am focused on building full stack apps along with SPAs. I have a passion for coding and learning new technologies. I'm a strong self starter and have self-taught myself my skills through different online platforms.
           </article>
@@ -35,7 +35,7 @@ export default function App() {
           <h2 className="py-3 text-xl">Contact Info</h2>
           <div className="text-sm border border-gray-500 rounded-md p-4">
             <p> Phone: <a href='tel:+14788675309' className='text-blue-400'>(478) 867-5309 </a></p>
-            <p> Email: <a href='mailto:foo@bar.com' className='text-blue-400'>foo@bar.com</a></p>
+            <p> Email: <a href='mailto:foo@bar.com' className='text-blue-400 break-words'>foo@bar.com</a></p>
             <p>Github: <a href='www.github.com/adamhartman5' className='text-blue-400'>Link</a></p>
           </div>
         </div>
@@ -46,8 +46,8 @@ export default function App() {
               key={project.id}
               className="my-3 border border-gray-500 rounded-md p-4"
             >
-              <h3 className="py-2 text-lg">{project.name}</h3>
-              <p className="py-2 text-sm">{project.description}</p>
+              <h3 className="py-2 text-lg min-w-0">{project.name}</h3>
+              <p className="py-2 text-md max-w-prose min-w-0">{project.description}</p>
             </article>
           ))}
         </div>
